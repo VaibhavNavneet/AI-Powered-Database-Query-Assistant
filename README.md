@@ -1,10 +1,11 @@
-# NL2SQL Chatbot
+# AI-Powered-Database-Query-Assistant
+
 
 > Ask questions in plain English. Get safe, read-only MySQL queries and concise answers.
 
-NL2SQL Chatbot is a full-stack natural-language interface for exploring a MySQL database. It reads the live database schema, asks Groq to generate a SQL query, validates that query before execution, and converts the returned rows into a short human-readable answer.
+AI-Powered-Database-Query-Assistant is a full-stack natural-language interface for exploring a MySQL database. It reads the live database schema, asks Groq to generate a SQL query, validates that query before execution, and converts the returned rows into a short human-readable answer.
 
-The primary application is a Next.js app designed for local development and Vercel deployment. A legacy Streamlit/LangChain implementation is also included under [`app/`](app/).
+The primary application is a Next.js app designed for local development. A legacy Streamlit/LangChain implementation is also included under [`app/`](app/).
 
 ## ✨ Features
 
