@@ -1,0 +1,29 @@
+:root { color-scheme: light; --ink: #17202a; --muted: #667085; --line: #e5e7eb; --accent: #3155d9; --soft: #f6f8fc; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #eef2f7; color: var(--ink); font-family: Arial, sans-serif; }
+.shell { min-height: 100vh; padding: 40px 16px; }
+.panel { width: min(900px, 100%); min-height: calc(100vh - 80px); margin: auto; padding: 40px; background: white; border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 16px 50px #1d29391a; display: flex; flex-direction: column; }
+.eyebrow { margin: 0 0 8px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 52px); letter-spacing: -.04em; }
+.subtitle { max-width: 650px; margin: 12px 0 0; color: var(--muted); line-height: 1.5; }
+.tables { margin: 20px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.messages { flex: 1; padding: 36px 0 24px; }
+.empty { padding: 22px; background: var(--soft); border-radius: 12px; color: var(--muted); }
+.message { max-width: 90%; margin: 0 0 20px; padding: 16px 18px; border-radius: 14px; line-height: 1.55; }
+.message.user { margin-left: auto; background: #edf1ff; }
+.message.assistant { background: var(--soft); }
+.label { margin-bottom: 5px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.content { white-space: pre-wrap; }
+details { margin-top: 14px; color: var(--muted); font-size: 13px; }
+summary { cursor: pointer; font-weight: 700; }
+pre { overflow: auto; padding: 12px; background: #111827; color: #e5e7eb; border-radius: 8px; font-size: 12px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.composer { display: flex; gap: 10px; padding-top: 20px; border-top: 1px solid var(--line); }
+input { min-width: 0; flex: 1; padding: 14px 16px; border: 1px solid #d0d5dd; border-radius: 10px; font-size: 15px; outline: none; }
+input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px #3155d91a; }
+button { padding: 0 22px; border: 0; border-radius: 10px; background: var(--accent); color: white; font-weight: 700; cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+.error { margin: 0 0 14px; color: #b42318; font-size: 14px; }
+@media (max-width: 600px) { .shell { padding: 0; } .panel { min-height: 100vh; padding: 28px 18px; border: 0; border-radius: 0; } .message { max-width: 100%; } }
